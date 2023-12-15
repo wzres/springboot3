@@ -15,13 +15,4 @@ import java.util.List;
 @SpringBootTest
 public class UserTest {
 
-    @Autowired
-    private UserMapper userMapper;
-
-    @Test
-    public void testList(){
-        List<User> list = userMapper.list();
-        System.out.println(list);
-    }
-
 }
