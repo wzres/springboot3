@@ -1,21 +1,18 @@
 package com.wzres.mapper;
 
 import com.wzres.domain.User;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
-
-import java.util.List;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
- * @ClassName UserMapper
- * @date 2023-12-16 01:01
- */
-@Mapper
-public interface UserMapper {
+* @author wz
+* @description 针对表【t_user】的数据库操作Mapper
+* @createDate 2023-12-16 01:49:38
+* @Entity com.wzres.domain.User
+*/
+public interface UserMapper extends BaseMapper<User> {
 
-    @Select("select * from t_user")
-    List<User> list();
-
-    @Select("select * from t_user")
-    List<User> selectAll();
 }
+
+
+
+

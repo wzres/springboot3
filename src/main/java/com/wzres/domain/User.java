@@ -1,16 +1,40 @@
 package com.wzres.domain;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+import java.io.Serializable;
 import lombok.Data;
 
 /**
- * @ClassName User
- * @date 2023-12-16 01:01
+ * 
+ * @TableName t_user
  */
-
+@TableName(value ="t_user")
 @Data
-public class User {
+public class User implements Serializable {
+    /**
+     * 
+     */
+    @TableId(type = IdType.AUTO)
     private Integer id;
+
+    /**
+     * 
+     */
     private String username;
+
+    /**
+     * 
+     */
     private Integer age;
+
+    /**
+     * 
+     */
     private String address;
+
+    @TableField(exist = false)
+    private static final long serialVersionUID = 1L;
 }
