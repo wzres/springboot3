@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/wzdemo
+    username: root
+    password: 9780619
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true #开启驼峰命名和下划线命名的自动转换
+
+
+#mybatis:
+#  mapper-locations: classpath:mapper/*Mapper.xml # mapper映射文件路径
+#  type-aliases-package: com.wzres.domain   # 配置哪个包下的类有默认的别名
