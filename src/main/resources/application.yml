@@ -4,6 +4,13 @@ spring:
     username: root
     password: 9780619
     driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    static-path-pattern: /res/** #修改静态资源访问路径
+  #    web:
+  #      resources:
+  #        static-locations:
+  #          - classpath:/sgstatic/
+  #          - classpath:/static/ #修改静态资源访问路径
 
 mybatis:
   configuration:
