@@ -9,8 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 
 @SpringBootApplication
+@Slf4j
 public class ExampleApplication {
     public static void main(String[] args) {
+        //log.info("启动成功");
         SpringApplication.run(ExampleApplication.class, args);
     }
 }

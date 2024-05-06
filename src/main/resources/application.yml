@@ -14,6 +14,7 @@ spring:
 
 mybatis:
   configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #配置mybatis的日志
     map-underscore-to-camel-case: true #开启驼峰命名和下划线命名的自动转换
 
 logging:
