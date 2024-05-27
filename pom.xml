@@ -43,6 +43,19 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
+        <!--redis依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <!--fastjson依赖-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.33</version>
+        </dependency>
+
         <!--引入validation依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
