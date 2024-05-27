@@ -1,9 +1,13 @@
 spring:
+  redis:
+    host: 127.0.0.1 #redis服务器ip地址
+    port: 6379  #redis端口号
   datasource:
     url: jdbc:mysql://localhost:3306/blog_practise
     username: root
     password: 9780619
     driver-class-name: com.mysql.cj.jdbc.Driver
+
   mvc:
     static-path-pattern: /res/** #修改静态资源访问路径
 #    web:
