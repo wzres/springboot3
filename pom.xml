@@ -9,7 +9,6 @@
         <version>3.1.2</version>
     </parent>
 
-
     <dependencies>
         <!--引入web依赖-->
         <dependency>
@@ -49,11 +48,44 @@
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
 
-        <!--引入JWT依赖-->
+        <!--SpringSecurity启动器-->
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <!--redis依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <!--引入JWT依赖-->
+        <!--<dependency>
             <groupId>com.auth0</groupId>
             <artifactId>java-jwt</artifactId>
             <version>4.4.0</version>
+        </dependency>-->
+
+        <!--引入jjWT依赖-->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.1</version>
+        </dependency>
+
+        <!--兼容JWT支持springboot3高版本-->
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+
+        <!--fastjson依赖-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.49</version>
         </dependency>
 
         <!--单元测试的坐标-->

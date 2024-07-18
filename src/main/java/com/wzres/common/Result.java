@@ -101,6 +101,10 @@ public class Result<T> implements Serializable {
         return setStatusEnum(enums,msg);
     }*/
 
+    public static Result errorResult(Status enums){
+        return setStatusEnum(enums,enums.getMsg());
+    }
+
     private static Result setStatusEnum(Status enums, String msg){
         return okSelect(enums.getCode(),msg);
     }
