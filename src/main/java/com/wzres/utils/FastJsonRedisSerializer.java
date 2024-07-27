@@ -44,14 +44,11 @@ public class FastJsonRedisSerializer<T> implements RedisSerializer<T>
     }
 
     @Override
-    public T deserialize(byte[] bytes) throws SerializationException
-    {
-        if (bytes == null || bytes.length <= 0)
-        {
+    public T deserialize(byte[] bytes) throws SerializationException {
+        if (bytes == null || bytes.length <= 0) {
             return null;
         }
         String str = new String(bytes, DEFAULT_CHARSET);
-
         return JSON.parseObject(str, clazz);
     }
 
