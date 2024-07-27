@@ -26,10 +26,10 @@ public class SecurityConfig {
 
     //创建BCryptPasswordEncoder注入容器
     //使用BCryptPasswordEncoder对用户密码进行加密存入数据库
-    @Bean
+    /*@Bean
     public PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
-    }
+    }*/
 
 
     // 通过传入参数AuthenticationConfiguration的方法获取AuthenticationManager
